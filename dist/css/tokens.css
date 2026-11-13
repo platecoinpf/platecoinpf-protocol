@@ -1,0 +1,34 @@
+/* ==========================================================================
+   tokens.css — the ONLY file in src/ allowed to contain colour literals.
+   Provenance (sampled from pixels, never invented):
+     --red    #E92C26  modal colour of brand/LOGO PLATECOIN PNG.png (89.8% of px)
+     --cream  #FEEAB2  modal mark colour of the same file (9.7% of px)
+     --brick  #CC382A  modal wordmark colour of reference/SAMPUL PLATECOIN JPG
+     --paper  #FDF0C3  modal background of reference/SAMPUL PLATECOIN JPG
+     --color-accent #00ffcc  mint, stated in the project brief for the own-token row
+   Everything else is derived with color-mix() from these.
+   ========================================================================== */
+:root {
+  --red: #E92C26;
+  --cream: #FEEAB2;
+  --brick: #CC382A;
+  --paper: #FDF0C3;
+  --color-accent: #00ffcc;
+
+  --shade: black;
+  --gloss: white;
+  --deep: color-mix(in srgb, var(--brick) 55%, var(--shade));
+  --ink: color-mix(in srgb, var(--red) 30%, var(--shade));
+  --up: var(--color-accent);
+  --down: color-mix(in srgb, var(--paper) 78%, var(--red));
+
+  --f-display: "Bricolage Grotesque", "Inter Tight", system-ui, sans-serif;
+  --f-body: "Inter Tight", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+
+  --pad: clamp(16px, 4vw, 64px);
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --r-pill: 99px;
+  --r-card: clamp(24px, 3.4vw, 48px);
+  --r-tile: 12px;
+}

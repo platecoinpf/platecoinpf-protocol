@@ -1,0 +1,14 @@
+{
+  "name": "platecoin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Platecoin — a Solana community coin shaped like a plate.",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:stated": "node scripts/build.mjs --ca=So11111111111111111111111111111111111111112 --out=.proof/stated",
+    "gates": "node scripts/gates.mjs",
+    "serve": "node scripts/serve.mjs"
+  }
+}

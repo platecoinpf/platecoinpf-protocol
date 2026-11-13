@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Platecoin — pass the plate</title>
+  <meta name="description" content="Platecoin is a Solana community coin shaped like a plate, with a live market board beside it so you can see the whole room.">
+  <link rel="canonical" href="https://platecoin.fun/">
+  <meta property="og:title" content="Platecoin — pass the plate">
+  <meta property="og:description" content="A Solana community coin shaped like a plate, with a live market board beside it.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://platecoin.fun/">
+  <meta property="og:image" content="https://platecoin.fun/assets/banner.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://platecoin.fun/assets/banner.jpg">
+  <link rel="icon" type="image/svg+xml" sizes="32x32" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/apple-touch.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="is-loading">
+
+  <div class="preloader" aria-hidden="true">
+    <div class="pl-curtain top"></div><div class="pl-curtain bottom"></div>
+    <div class="pl-inner"><img class="pl-logo" src="assets/logo-512.png" alt="" width="180" height="180"><div class="pl-word">Warming the plates</div></div>
+  </div>
+
+  <div class="progress" aria-hidden="true"><span></span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="hdr" data-hdr>
+    <a href="#top" class="brand" aria-label="Platecoin home"><img src="assets/logo-512.png" alt="" width="40" height="40"><span>Platecoin</span></a>
+    <div class="ca-wrap" data-ca-slot><!--@ca-slot--></div>
+    <div class="social" data-social><!--@social--></div>
+  </header>
+
+  <main id="top">
+    <!-- 00 HERO -->
+    <section class="hero theme-paper" data-hero>
+      <div class="mesh" aria-hidden="true">
+        <i class="blob b1" data-depth="0.5"></i><i class="blob b2" data-depth="0.9"></i><i class="blob b3" data-depth="0.3"></i>
+      </div>
+      <p class="eyebrow" data-reveal>A Solana coin shaped like a plate</p>
+      <h1 class="hero-title" aria-label="Pass the plate, pass it on.">
+        <span class="line"><span class="line-in">Pass the</span></span>
+        <span class="line"><span class="line-in">plate,</span></span>
+        <span class="line"><span class="line-in"><em>pass it on.</em></span></span>
+      </h1>
+      <div class="coin-stage" aria-hidden="true" data-depth="1.2">
+        <div class="coin-float"><div class="coin-tilt" data-tilt><div class="coin">
+          <div class="coin-face coin-front"><img src="assets/logo-512.png" alt="" width="512" height="512"></div>
+          <div class="coin-face coin-back"><img src="assets/logo-512.png" alt="" width="512" height="512"></div>
+        </div></div></div>
+        <div class="coin-shadow"></div>
+      </div>
+      <div class="hero-bottom">
+        <p class="hero-copy" data-reveal><strong>Platecoin</strong> is a holder-run coin built around one round, simple symbol. Trade it, track it, hand it along. The market sits right beside it, in the open.</p>
+        <div class="hero-cta" data-reveal><!--@buy--><a href="#market" class="btn btn-ghost"><span>Open the board</span></a></div>
+        <div class="hero-read" data-reveal>
+          <span class="status" data-status><i></i><b>Connecting</b></span>
+          <dl><div><dt>Rows</dt><dd>10</dd></div><div><dt>Refresh</dt><dd>60 s</dd></div></dl>
+        </div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span></span></div>
+    </section>
+
+    <!-- BANDS -->
+    <section class="bands" aria-hidden="true">
+      <div class="band band-red"><div class="marquee-track" data-ticker></div></div>
+      <div class="band band-cream"><div class="marquee-track reverse">
+        <span>Round things roll further <i>≈</i> Runs on Solana <i>≈</i> One plate, many hands <i>≈</i> Open books <i>≈</i></span>
+        <span>Round things roll further <i>≈</i> Runs on Solana <i>≈</i> One plate, many hands <i>≈</i> Open books <i>≈</i></span>
+      </div></div>
+    </section>
+
+    <!-- 01 MARKET BOARD -->
+    <section class="market theme-paper" id="market" aria-label="Live market board">
+      <div class="board" data-spot>
+        <img class="board-mark" src="assets/mark-512.png" alt="" aria-hidden="true" width="512" height="512">
+        <div class="board-top">
+          <p class="label"><span>01</span> The market board</p>
+          <span class="status" data-status><i></i><b>Connecting</b></span>
+        </div>
+        <h2 class="board-title" data-reveal>Ten tokens moving on Solana, <em>side by side.</em></h2>
+        <div class="rows-head" aria-hidden="true"><span>#</span><span>Token</span><span>Price</span><span>24h</span><span>Volume</span><span>Liquidity</span></div>
+        <ol class="rows" data-rows aria-live="off"></ol>
+        <p class="board-note" data-board-note hidden></p>
+        <p class="board-foot">Ranked by boost weight on DexScreener. Your own row sits first the moment an address is stated.</p>
+      </div>
+    </section>
+
+    <!-- 02 MANIFESTO -->
+    <section class="manifesto theme-red" id="idea">
+      <p class="label"><span>02</span> The idea</p>
+      <p class="manifesto-text" data-words>Money moves in circles, and so do plates. A coin is only a plate for value: you load it, pass it, and somebody else reaches out to take it. We took that picture literally. <em class="hl">Platecoin is the plate.</em> It lives on Solana, it keeps its books in the open, and it shows you the whole market beside it, so you never have to take our word for how busy the room is.</p>
+    </section>
+
+    <!-- 03 INDEX -->
+    <section class="index theme-red" aria-label="Plate tally">
+      <div class="index-head"><p class="label"><span>03</span> The plate tally</p><p class="idx-n"><b data-idx-now>01</b> / 05</p></div>
+      <div class="plate-wrap" aria-hidden="true">
+        <svg class="plate" viewBox="0 0 600 600"><circle class="p-base" cx="300" cy="300" r="290"/><circle class="p-well" cx="300" cy="300" r="214"/><circle class="p-track" cx="300" cy="300" r="290"/><circle class="p-ring" data-ring cx="300" cy="300" r="290" pathLength="1" transform="rotate(-90 300 300)"/></svg>
+      </div>
+      <div class="idx-items">
+        <div class="idx" data-to="10"><div class="idx-num"><span class="n">0</span></div><p class="idx-cap">Tokens on the live board at any moment, each with logo, price, daily change, liquidity and volume.</p><p class="idx-src">Board</p></div>
+        <div class="idx" data-to="60" data-suffix="s"><div class="idx-num"><span class="n">0</span></div><p class="idx-cap">Seconds between refreshes while this tab is open. Hide the tab and the polling stops.</p><p class="idx-src">Refresh</p></div>
+        <div class="idx" data-to="1"><div class="idx-num"><span class="n">0</span></div><p class="idx-cap">Chain. Everything here is Solana, nothing wrapped, nothing bridged.</p><p class="idx-src">Chain</p></div>
+        <div class="idx" data-to="2"><div class="idx-num"><span class="n">0</span></div><p class="idx-cap">Independent sources read in parallel for the coin's own row, so neither one can hold the other up.</p><p class="idx-src">Sources</p></div>
+        <div class="idx" data-to="100" data-suffix="%"><div class="idx-num"><span class="n">0</span></div><p class="idx-cap">Of the contract address is shown, whole and never trimmed, the instant it is stated.</p><p class="idx-src">Address</p></div>
+      </div>
+    </section>
+
+    <!-- 04 HOW IT WORKS (pinned horizontal) -->
+    <section class="how theme-paper" id="how" data-how>
+      <div class="how-pin">
+        <div class="how-track" data-how-track>
+          <div class="h-intro"><p class="label"><span>04</span> The method</p><h2 data-reveal>A coin that <em>holds still.</em></h2><p class="h-lead">Four plain steps. No fog, no fine print wearing a costume.</p></div>
+          <article class="h-card" data-spot><div class="h-top"><span class="h-num">01</span><svg class="h-icon" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="17" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="24" cy="24" r="8" fill="none" stroke="currentColor" stroke-width="3"/></svg></div><div><h3>Load</h3><p>The coin is created on Solana, where transfers settle quickly and fees stay small.</p></div></article>
+          <article class="h-card" data-spot><div class="h-top"><span class="h-num">02</span><svg class="h-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M8 30c8-14 24-14 32 0M32 18l8 12-14 2" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><h3>Pass</h3><p>Anyone can pick it up or hand it on. Each move is a trade, and each trade is public.</p></div></article>
+          <article class="h-card" data-spot><div class="h-top"><span class="h-num">03</span><svg class="h-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M6 24s7-12 18-12 18 12 18 12-7 12-18 12S6 24 6 24z" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><circle cx="24" cy="24" r="5" fill="none" stroke="currentColor" stroke-width="3"/></svg></div><div><h3>Watch</h3><p>The board above reads the wider market live, so the coin always has context beside it.</p></div></article>
+          <article class="h-card" data-spot><div class="h-top"><span class="h-num">04</span><svg class="h-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 25l9 9 19-21" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><h3>Verify</h3><p>One address, shown whole at the top of the page. Check it against our official X before you act.</p></div></article>
+          <div class="h-outro"><p>Round in.<br><em>Round out.</em></p></div>
+        </div>
+        <div class="flow" aria-hidden="true"><div class="flow-line"><span data-flow></span></div><div class="flow-labels"><span>Load</span><span>Pass</span><span>Watch</span><span>Verify</span></div></div>
+      </div>
+    </section>
+
+    <!-- 05 RACK (pinned scene) -->
+    <section class="rack theme-paper" id="rack" data-rack aria-label="The plate rack fills as you scroll">
+      <div class="rack-pin">
+        <div class="rack-top"><p class="label"><span>05</span> The rack</p>
+          <div class="rack-heads"><h2 class="rk-head">An empty rack.</h2><h2 class="rk-head">A trade, <em>a plate.</em></h2><h2 class="rk-head">Plates start to <em>stack.</em></h2><h2 class="rk-head">That is the entire <em>loop.</em></h2></div>
+        </div>
+        <svg class="rack-svg" viewBox="0 0 1200 420" aria-hidden="true" data-rack-svg></svg>
+      </div>
+    </section>
+
+    <!-- 06 COIN -->
+    <section class="token theme-red" id="coin">
+      <div class="coin-grid">
+        <div class="coin-copy">
+          <p class="label"><span>06</span> The token</p>
+          <h2 data-reveal>One plate.<br><em>One symbol.</em></h2>
+          <p class="coin-lead" data-reveal>Platecoin is a holder-run token on Solana with a deliberately small footprint: a name, a mark, a public address and a market you can watch. Whatever is not confirmed stays visibly blank instead of being filled in with hope.</p>
+          <dl class="facts" data-reveal>
+            <div><dt>Name</dt><dd>Platecoin</dd></div>
+            <div><dt>Chain</dt><dd>Solana</dd></div>
+            <div><dt>Address</dt><dd data-ca-fact><!--@ca-fact--></dd></div>
+            <div><dt>Market</dt><dd>Live board</dd></div>
+          </dl>
+        </div>
+        <div class="ca-card" data-spot data-reveal>
+          <div class="ca-top"><span class="label">Mint address</span><span class="pill"><i class="dot"></i>Solana</span></div>
+          <div data-ca-card><!--@ca-card--></div>
+          <p class="ca-note">Trust only the address shown here and on our verified X account. Nobody will send it to you in a private message.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 ROADMAP -->
+    <section class="road theme-paper" id="road">
+      <p class="label"><span>07</span> Phases</p>
+      <h2 class="road-title" data-reveal>Four stacks <em>of plates.</em></h2>
+      <div class="road-grid">
+        <article class="phase" style="--h:150px"><div class="stack" aria-hidden="true"></div><span class="ph-n">I</span><h3>Set the plate</h3><p>Go live on Solana. The address appears in the slot at the top of this page and on our official X.</p></article>
+        <article class="phase" style="--h:125px"><div class="stack" aria-hidden="true"></div><span class="ph-n">II</span><h3>Open the board</h3><p>The coin takes the first row of the market board, pinned above everything else.</p></article>
+        <article class="phase" style="--h:100px"><div class="stack" aria-hidden="true"></div><span class="ph-n">III</span><h3>Fill the rack</h3><p>More holders, more hands, more trades. We publish what is confirmed and leave the rest blank.</p></article>
+        <article class="phase" style="--h:75px"><div class="stack" aria-hidden="true"></div><span class="ph-n">IV</span><h3>Pass it around</h3><p>Community-led growth, and the open-source repository once it is ready to show.</p></article>
+      </div>
+      <p class="road-after" data-reveal>A plate stays round because it keeps going. <em>So do we.</em></p>
+    </section>
+  </main>
+
+  <footer class="foot theme-red">
+    <div class="foot-cta"><h2 data-reveal>Take a <em>seat.</em></h2>
+      <div class="foot-btns"><!--@x-join--><a href="#coin" class="btn btn-ghost"><span>Show the address</span></a></div></div>
+    <div class="banner-stage"><div class="banner-card" data-spot data-tilt-card><img src="assets/banner.jpg" alt="Platecoin banner" width="1500" height="500" loading="lazy"></div></div>
+    <div class="foot-grid">
+      <div><p class="label">Reads from</p><ul class="srcs"><li>DexScreener, for the market board and pairs</li><li>pump.fun, for the coin's own image and details</li><li>Solana mainnet, via a public RPC</li></ul></div>
+      <div><p class="label">Disclaimer</p><p class="disc">Platecoin is a speculative community token. Nothing on this page is advice, an offer, or a promise of profit. Prices swing hard and you can lose everything you put in, so stake only what you can spare.</p></div>
+    </div>
+    <div class="foot-bottom"><span>Platecoin</span><span>PlateCoin.fun</span><span>Runs on Solana</span></div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
